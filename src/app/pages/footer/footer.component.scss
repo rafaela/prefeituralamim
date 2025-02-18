@@ -1,0 +1,45 @@
+.footer{
+    background-color: var(--primary-color);
+    padding: 100px;
+    bottom: 0;
+    color: var(--white-color);
+
+}
+
+.col1{
+    text-align: center;
+}
+
+p{
+    color: var(--white-color);
+}
+
+.texto{
+    margin-bottom: 0px;
+}
+
+.col3{
+    text-align: center;
+}
+
+.icone{
+    margin-right: 8px;
+}
+
+a{
+    color: var(--white-color);
+}
+
+
+.info{
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    -webkit-transition: background-color 0.2s ease, transform 0.2s ease;
+    -moz-transition: background-color 0.2s ease, transform 0.2s ease;
+    -ms-transition: background-color 0.2s ease, transform 0.2s ease;
+    -o-transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.info:hover {
+    color: var(--secondary-color);
+    transform: scale(1.1);
+}

@@ -1,0 +1,130 @@
+<div class="accessibility-menu">
+    <button class="btn btn-light btnHeader"  (click)="increaseFontSize()" data-toggle="tooltip" data-placement="bottom" title="Aumentar a fonte">
+      <i class="bi bi-plus" style="color: var(--white-color); margin-left: -7px;"></i>
+    </button>
+    <button class="btn btn-light btnHeader" (click)="decreaseFontSize()" data-toggle="tooltip" data-placement="bottom" title="Diminuir a fonte">
+      <i class="bi bi-dash" style="color: var(--white-color);margin-left: -7px; "></i>
+    </button>
+    <button class="btn btn-light btnHeader" (click)="toggleHighContrast()" data-toggle="tooltip" data-placement="bottom" title="Alto Contraste">
+      <i class="bi bi-circle-half" style="color: var(--white-color); margin-left: -7px;"></i>
+    </button>
+    <button class="btn btn-light btnHeader" (click)="toggleDarkMode()" data-toggle="tooltip" data-placement="bottom" title="Mapa do Site">
+      <i class="bi bi-diagram-3" style="color: var(--white-color); margin-left: -7px;"></i>
+    </button>
+    <div>
+      <a class="btn btn-light btnHeader" role="button" href="/login" data-toggle="tooltip" data-placement="bottom" title="Login">
+        <i class="bi bi-person-fill-lock" style="color: var(--white-color); margin-left: -7px;"></i>
+      </a>
+    </div>
+      
+</div>
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" [style.top.px]="navbarTop">
+  
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand" href="/">
+        <img src="./../../../assets/images/logo1.png" class="logo" alt="Prefeito da cidade de Lamim">
+      </a>
+  
+      <!-- Botão de menu para dispositivos pequenos -->
+      <button
+        class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Links do menu -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- Início -->
+          <li class="nav-item dropdown">
+            <a class="nav-link linksHover "  href="/" >
+              Início
+            </a>
+            
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link linksHover dropdown-toggle" id="institucionalDropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false" href="/secretarias">
+              A Cidade
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="institucionalDropdown">
+              <li><a class="dropdown-item linksHover" href="/cidade/historia" routerLinkActive="active">História</a></li>
+              <li><a class="dropdown-item linksHover" href="/cidade/galeriafotos" routerLinkActive="active">Galeria de fotos</a></li>
+              <li><a class="dropdown-item linksHover" href="/cidade/hinobandeira" routerLinkActive="active">Hino e Bandeira</a></li>
+              
+            </ul>
+          </li>
+  
+          <!-- Institucional -->
+          <li class="nav-item dropdown">
+            <a class="nav-link linksHover dropdown-toggle" id="institucionalDropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false" href="/institucional">
+              Institucional
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="institucionalDropdown">
+              <li><a class="dropdown-item linksHover" href="/institucional/prefeito" routerLinkActive="active">Prefeito</a></li>
+              <li><a class="dropdown-item linksHover" href="/institucional/viceprefeito" routerLinkActive="active">Vice-prefeito</a></li>
+            </ul>
+          </li>
+  
+          <!-- Secretarias -->
+          <li class="nav-item dropdown">
+            <a class="nav-link linksHover dropdown-toggle" id="institucionalDropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false" href="/secretarias">
+              Secretarias
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="institucionalDropdown">
+              <li><a class="dropdown-item linksHover" href="/secretarias/secsaude" routerLinkActive="active">Secretaria de Saúde</a></li>
+              <li><a class="dropdown-item linksHover" href="/secretarias/secagro" routerLinkActive="active">Secretaria de Agricultura e Meio Ambiente</a></li>
+              <li><a class="dropdown-item linksHover" href="/secretarias/seccultura" routerLinkActive="active">Secretaria de Cultura, Turismo, Esporte e Lazer</a></li>
+              <li><a class="dropdown-item linksHover" href="/secretarias/seceducacao" routerLinkActive="active">Secretaria de Educação</a></li>
+              <li><a class="dropdown-item linksHover" href="/secretarias/secsocial" routerLinkActive="active">Secretaria de Assistência Social</a></li>
+              <li><a class="dropdown-item linksHover" href="/secretarias/secobras" routerLinkActive="active">Secretaria de Obras e Infraestrutura</a></li>
+              <li><a class="dropdown-item linksHover" href="/secretarias/secadministracao" routerLinkActive="active">Secretaria de Administração</a></li>
+              <li><a class="dropdown-item linksHover" href="/secretarias/chefegabinete" routerLinkActive="active">Chefe de Gabinete</a></li>
+
+            </ul>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link linksHover dropdown-toggle" id="institucionalDropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false" href="/secretarias">
+              Transparencia
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="institucionalDropdown">
+              <li><a class="dropdown-item linksHover" href="/secretarias/secsaude" routerLinkActive="active">Portal da Transparência</a></li>
+              <li><a class="dropdown-item linksHover" href="/secretarias/secagro" routerLinkActive="active">Contracheque</a></li>
+              <li><a class="dropdown-item linksHover" href="/secretarias/secagro" routerLinkActive="active">PPA, LDO, LOA</a></li>
+              
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link linksHover dropdown-toggle" id="institucionalDropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false" href="/secretarias">
+              Serviços
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="institucionalDropdown">
+              <li><a class="dropdown-item linksHover" href="/secretarias/secsaude" routerLinkActive="active">Secretaria de Saúde</a></li>
+              <li><a class="dropdown-item linksHover" href="/secretarias/secagro" routerLinkActive="active">Secretaria de Agricultura e Meio Ambiente</a></li>
+              
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link linksHover " href="/diario">
+              Diário Oficial
+            </a>
+            
+          </li>
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
+  

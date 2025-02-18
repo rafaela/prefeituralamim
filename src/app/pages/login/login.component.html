@@ -1,0 +1,41 @@
+<app-header></app-header>
+<div class="container content">
+
+    <div class="row" style="margin-top: 20px;">
+        <div class="col">
+            <h1 class="titulo">Login</h1>
+        </div>
+    </div>
+
+
+    <div class="row" style="margin-top: 20px;">
+        <div class="col-lg-6">
+            <div class="mb-3">
+                <label for="basic-url" class="form-text labelColor">Usuário</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="basic-url-pass" [(ngModel)]="data" aria-describedby="basic-addon3 basic-addon4">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="row" >
+        <div class="col-lg-6">
+            <div class="mb-3">
+                <label for="basic-url" class="form-text labelColor">Senha</label>
+                <div class="input-group">
+                    <input type="password" class="form-control" id="basic-url" [(ngModel)]="data" aria-describedby="basic-addon3 basic-addon4">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="row" >
+        <div class="col-lg-4">
+            <button class="btn btn-primary" class="botaoAzul" (click)="login()">Entrar</button>
+        </div>
+
+    </div>
+</div>

@@ -1,1 +1,104 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.google.com/specimen/Open+Sans');
+
+:root{
+    --primary-color: #016add;
+    --secondary-color: #38f100;
+    --white-color: #fefefe;
+    --font-color: #616161;
+}
+
+
+body{
+    font-family: 'Open Sans';
+
+}
+
+p, h1, h2, a{
+    color: var(--font-color);
+}
+
+h1{
+    font-size: 25px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+button{
+    background-color: var(--secondary-color); 
+   
+}
+
+.titulo{
+    color: var(--primary-color);
+    border-bottom: 5px solid var(--secondary-color);
+    display: inline;
+    font-weight: 500;
+}
+
+
+.lermais{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: 1px solid var(--primary-color) ;
+}
+
+/* Ajusta o conteúdo para passar por baixo da barra */
+.content {
+    margin-top: 90px; /* Altura ajustada para compensar a barra de navegação fixa */
+    padding: 20px;
+}
+
+.lista{
+    //border: 1px solid #dee2e6;
+    
+    border: none;
+}
+
+.itemLista{
+    border: none;
+}
+
+.linhaLista{
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding-top: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+.botaoVerde{
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    height: 37px;
+    color: var( --white-color);
+    border-radius: 5px;
+    width: 90px;
+    
+}
+
+.botaoAzul{
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    height: 37px;
+    color: var( --white-color);
+    border-radius: 5px;
+    width: 90px;
+    margin-right: 10px !important;
+}
+
+
+.labelColor{
+    color: var(--primary-color);
+}

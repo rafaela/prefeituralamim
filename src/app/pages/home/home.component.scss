@@ -1,0 +1,31 @@
+.carrossel{
+    width: 80%;
+    margin: 20px auto;
+}
+
+
+.card2{
+    width: 18rem;  
+}
+
+.link{
+    font-size: 25px;
+    color: var(--white-color);
+}
+
+
+.acessorapido{
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    width: 200px;
+    height: 100px;
+}
+
+
+@media only screen and (max-width: 980px) {
+    .card2{
+        width: 25rem;
+    }
+
+}
