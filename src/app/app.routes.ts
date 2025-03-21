@@ -18,6 +18,12 @@ import { DiariosComponent } from './pages/diarios/diarios.component';
 import { NgModule } from '@angular/core';
 import { LoginComponent } from './pages/login/login.component';
 import { MenuComponent } from './pages/menu/menu.component';
+import { ListaDiarioComponent } from './pages/lista-diario/lista-diario.component';
+import { NovoDiarioComponent } from './pages/novo-diario/novo-diario.component';
+import { ListaDecretosComponent } from './pages/lista-decretos/lista-decretos.component';
+import { NovoDecretoComponent } from './pages/novo-decreto/novo-decreto.component';
+import { ListaLicitacoesComponent } from './pages/lista-licitacoes/lista-licitacoes.component';
+import { NovoLicitacaoComponent } from './pages/novo-licitacao/novo-licitacao.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -37,6 +43,19 @@ export const routes: Routes = [
     { path: 'cidade/hinobandeira', component: HinobandeiraComponent },
     { path: 'diario', component: DiariosComponent },
     { path: 'login', component: LoginComponent },
+    
+    
     { path: 'menu', component: MenuComponent },
+    { path: 'lista-diario', component: ListaDiarioComponent },
+    { path: 'cadastro-diario', component: NovoDiarioComponent },
+    { path: 'cadastro-diario/:id', component: NovoDiarioComponent },
+
+    { path: 'lista-decretos', component: ListaDecretosComponent },
+    { path: 'cadastro-decretos', component: NovoDecretoComponent },
+    { path: 'cadastro-decreto/:id', component: NovoDecretoComponent },
+
+    { path: 'lista-licitacoes', component: ListaLicitacoesComponent },
+    { path: 'cadastro-licitacao', component: NovoLicitacaoComponent },
+    { path: 'cadastro-licitacao/:id', component: NovoLicitacaoComponent }
 
 ];

@@ -1,0 +1,84 @@
+<app-menu></app-menu>
+
+<div class="container content">
+    <div class="row" style="margin-top: 20px;">
+        <div class="col-lg-5">
+            <div class="mb-3">
+                <label for="basic-url" class="form-text labelColor">Número do Processo</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="basic-url" [(ngModel)]="data.processNumber" aria-describedby="basic-addon3 basic-addon4">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3">
+            <div class="mb-3">
+                <label for="basic-url" class="form-text labelColor">Assunto</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="basic-url" [(ngModel)]="data.subject" aria-describedby="basic-addon3 basic-addon4">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-4">
+            <div class="mb-3">
+                <label for="basic-url" class="form-text labelColor">Modalidade</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="basic-url" [(ngModel)]="data.modality" aria-describedby="basic-addon3 basic-addon4">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 20px;">
+        <div class="col-lg-5">
+            <div class="mb-3">
+                <label for="basic-url" class="form-text labelColor">Unidade Requisitante</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="basic-url" [(ngModel)]="data.requestingUnit" aria-describedby="basic-addon3 basic-addon4">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-5">
+            <div class="mb-3">
+                <label for="basic-url" class="form-text labelColor">Status</label>
+                <select class="form-select" aria-label="Default select example" [(ngModel)]="data.status">
+
+                    <option value=1>Novo</option>
+                    <option value=2>Em Andamento</option>
+                    <option value=3>Cancelada</option>
+                    <option value=4>Fechada para envio de Propostas</option>
+                    <option value=5>Concluída</option>
+                  </select>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="row" style="margin-top: 20px;">
+
+        <div class="mb-3">
+            <label for="basic-url" class="form-text labelColor">Arquivo</label>
+            <div class="input-group" *ngIf="data.id == null">
+                <input  type="file" class="form-control" id="basic-url" (change)="onFileSelected($event)" [(ngModel)]="data.fileName" aria-describedby="basic-addon3 basic-addon4">
+
+                
+            </div>
+
+            <div *ngIf="data.fileName && data.id != null">Nome: {{ data.fileName }}</div>
+        </div>
+    </div>
+
+
+    <div class="row" style="margin-top: 20px;">
+
+        <div class="col-lg-6">
+            <button class="btn btn-primary" class="botaoAzul" (click)="salvar()">Salvar</button>
+            <button class="btn btn-primary" class="botaoVerde" (click)="cancelar()" >Cancelar</button>
+
+        </div>
+    </div>
+</div>

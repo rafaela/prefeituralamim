@@ -1,0 +1,58 @@
+<app-menu></app-menu>
+
+<div class="container content">
+    <div class="row" style="margin-top: 20px;">
+        <div class="col-lg-5">
+            <div class="mb-3">
+                <label for="basic-url" class="form-text labelColor">Código</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="basic-url" [(ngModel)]="data.code" aria-describedby="basic-addon3 basic-addon4">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3">
+            <div class="mb-3">
+                <label for="basic-url" class="form-text labelColor">Edição</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="basic-url" [(ngModel)]="data.edition" aria-describedby="basic-addon3 basic-addon4">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-2">
+            <div class="mb-3">
+                <label for="basic-url" class="form-text labelColor">Ano</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="basic-url" [(ngModel)]="data.year" aria-describedby="basic-addon3 basic-addon4">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row" style="margin-top: 20px;">
+
+        <div class="mb-3">
+            <label for="basic-url" class="form-text labelColor">Arquivo</label>
+            <div class="input-group" *ngIf="data.Id == null">
+                <input  type="file" class="form-control" id="basic-url" (change)="onFileSelected($event)" [(ngModel)]="data.fileName" aria-describedby="basic-addon3 basic-addon4">
+
+                
+            </div>
+
+            <div *ngIf="data.fileName && data.Id != null">Nome: {{ data.fileName }}</div>
+        </div>
+    </div>
+
+
+    <div class="row" style="margin-top: 20px;">
+
+        <div class="col-lg-6">
+            <button class="btn btn-primary" class="botaoAzul" (click)="salvar()">Salvar</button>
+            <button class="btn btn-primary" class="botaoVerde" (click)="cancelar()" >Cancelar</button>
+
+        </div>
+    </div>
+</div>

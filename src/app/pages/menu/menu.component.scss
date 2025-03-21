@@ -1,0 +1,59 @@
+.accessibility-menu {
+    display: flex;
+    gap: 10px;
+    background-color: var(--primary-color);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    z-index: 1000; 
+
+    align-items: center;
+    justify-content: flex-start; /* Alinha os itens ao topo por padrão */
+}
+
+
+.accessibility-menu div {
+    margin-left: auto; /* Envia o último botão para o final da tela */
+}
+  
+.accessibility-menu .btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 25px;
+    height: 25px;
+    font-size: 15px;
+}
+
+nav{
+    position: fixed;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    z-index: 999; /* Coloca abaixo da barra de acessibilidade */
+    transition: top 0.3s ease; /* Suaviza a mudança */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.linksHover{
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.linksHover:hover {
+    color: var(--secondary-color);
+    transform: scale(1.1);
+}
+
+.btnHeader{
+    background-color: var(--secondary-color) ;
+    border: 1px solid var(--secondary-color);
+    color: var(--white-color);
+}
+
+.logo{
+    width: 200px;
+}

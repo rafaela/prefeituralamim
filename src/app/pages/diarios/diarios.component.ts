@@ -42,9 +42,6 @@ export class DiariosComponent  implements OnInit{
       this.diariosList.forEach((element: any) => {
         element.date = moment(element.date).format("DD/MM/yyyy")
       });
-
-      console.log(this.diariosList)
-      console.log(this.total)
     })
   }
 

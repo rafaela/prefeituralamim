@@ -1,4 +1,79 @@
-<div class="container content">
+<div class="accessibility-menu">
+    <button class="btn btn-light btnHeader" (click)="increaseFontSize()" data-toggle="tooltip" data-placement="bottom"
+        title="Aumentar a fonte">
+        <i class="bi bi-plus" style="color: var(--white-color); margin-left: -7px;"></i>
+    </button>
+    <button class="btn btn-light btnHeader" (click)="decreaseFontSize()" data-toggle="tooltip" data-placement="bottom"
+        title="Diminuir a fonte">
+        <i class="bi bi-dash" style="color: var(--white-color);margin-left: -7px; "></i>
+    </button>
+    <button class="btn btn-light btnHeader" (click)="toggleHighContrast()" data-toggle="tooltip" data-placement="bottom"
+        title="Alto Contraste">
+        <i class="bi bi-circle-half" style="color: var(--white-color); margin-left: -7px;"></i>
+    </button>
+    <button class="btn btn-light btnHeader" (click)="toggleDarkMode()" data-toggle="tooltip" data-placement="bottom"
+        title="Mapa do Site">
+        <i class="bi bi-diagram-3" style="color: var(--white-color); margin-left: -7px;"></i>
+    </button>
+    <div>
+        <a style="color: var(--secondary-color);" href="/login" data-toggle="tooltip" data-placement="bottom"
+            title="Login">
+            Sair
+        </a>
+    </div>
 
-    
 </div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" [style.top.px]="navbarTop">
+
+    <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="/">
+            <img src="./../../../assets/images/logo1.png" class="logo" alt="Prefeito da cidade de Lamim">
+        </a>
+
+        <!-- Botão de menu para dispositivos pequenos -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Alternar navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links do menu -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- Início -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link linksHover " href="menu">
+                        Início
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link linksHover " href="lista-licitacoes">
+                        Licitações
+                    </a>
+
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link linksHover " href="lista-decretos">
+                        Decretos
+                    </a>
+
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link linksHover " href="lista-diario">
+                        Diário Oficial
+                    </a>
+
+                </li>
+
+
+                
+            </ul>
+        </div>
+    </div>
+</nav>
